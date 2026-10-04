@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Anny ♡</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;min-height:100vh;overflow-x:hidden;
+ font-family:Georgia,"Times New Roman",serif;color:#fff;
+ background:linear-gradient(180deg,#72d9f2 0%,#55c7e8 38%,#258ec5 72%,#075184 100%);
+}
+body::before{
+ content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;
+ background:
+ radial-gradient(ellipse at 20% 20%,rgba(255,255,255,.35),transparent 28%),
+ radial-gradient(ellipse at 80% 55%,rgba(255,255,255,.2),transparent 25%);
+}
+main{max-width:720px;margin:auto;position:relative;padding:20px 16px 55px}
+.hero{
+ min-height:82vh;display:flex;flex-direction:column;align-items:center;
+ justify-content:center;text-align:center;position:relative;
+}
+.hero .symbol{font-size:52px;filter:drop-shadow(0 5px 10px rgba(0,70,120,.2));animation:float 3s ease-in-out infinite}
+h1{font-size:clamp(45px,14vw,80px);font-weight:500;margin:12px 0 8px;text-shadow:0 4px 15px rgba(0,65,110,.25)}
+.subtitle{font-family:Arial,sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;opacity:.9}
+.scroll{
+ margin-top:42px;width:50px;height:50px;border-radius:50%;
+ display:grid;place-items:center;text-decoration:none;color:#075184;
+ background:rgba(255,255,255,.82);box-shadow:0 8px 25px rgba(0,65,110,.2);
+ animation:pulse 2s infinite;font-size:23px;
+}
+.section{
+ position:relative;margin-bottom:25px;padding:26px 20px;border-radius:30px;
+ background:rgba(255,255,255,.17);border:1px solid rgba(255,255,255,.5);
+ box-shadow:0 15px 45px rgba(0,65,110,.18);backdrop-filter:blur(10px);
+ overflow:hidden;
+}
+.section::after{
+ content:"";position:absolute;left:-10%;right:-10%;bottom:-34px;height:70px;
+ border-radius:50% 50% 0 0;
+ border-top:4px solid rgba(255,255,255,.7);
+ box-shadow:0 -13px 0 rgba(0,74,130,.22),0 -27px 0 rgba(255,255,255,.28);
+ pointer-events:none;
+}
+h2{margin:0 0 20px;text-align:center;font-weight:500;font-size:27px;color:#fff}
+.message{font-family:Arial,sans-serif;font-size:16px;line-height:1.85;color:#fff;text-shadow:0 1px 2px rgba(0,50,90,.18);padding-bottom:25px}
+.wave-divider{height:38px;margin:25px -5px 20px;position:relative;overflow:hidden}
+.wave-divider::before,.wave-divider::after{
+ content:"";position:absolute;left:-5%;width:110%;height:35px;border-radius:50%;
+ border-top:3px solid rgba(255,255,255,.9);
+}
+.wave-divider::before{top:8px;box-shadow:0 10px 0 rgba(0,74,130,.5)}
+.wave-divider::after{top:20px;box-shadow:0 8px 0 rgba(255,255,255,.35)}
+.closing{text-align:center;font-size:22px;padding:20px 5px 5px}
+.footer{text-align:center;font-family:Arial,sans-serif;font-size:13px;opacity:.8;padding:20px}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes pulse{50%{transform:scale(1.08)}}
+@media(max-width:500px){
+ main{padding:14px 12px 40px}
+ .section{padding:23px 17px;border-radius:25px}
+ .message{font-size:15.5px;line-height:1.8}
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+ <div class="symbol">♡</div>
+ <h1>Para Anny</h1>
+ <div class="subtitle">uma nova fase · uma amizade leve</div>
+ <a class="scroll" href="#carta">↓</a>
+</section>
+
+<section class="section" id="carta">
+ <h2>uma mensagem para você</h2>
+ <div class="wave-divider"></div>
+ <div class="message">anny eu queria te dizer uma coisa que talvez eu nunca tenha conseguido falar da forma certa voce foi uma pessoa muito importante em uma fase da minha vida e mesmo que as coisas entre a gente tenham mudado eu nunca vou apagar a importancia que voce teve para mim eu aprendi muito durante o tempo que estivemos proximos e uma parte do meu crescimento como pessoa tambem veio de tudo que vivi e aprendi ao seu lado sou grato pelas conversas pelos momentos bons pelas experiencias e ate pelas coisas que nao deram certo porque de alguma forma tudo isso me ajudou a amadurecer e a enxergar algumas coisas de uma maneira diferente hoje eu consigo olhar para o nosso passado com mais tranquilidade e sem guardar ressentimentos e sinceramente fico muito feliz por termos voltado a nos falar e por conseguirmos construir novamente uma amizade eu acho muito bom poder conversar com voce de novo sem aquele peso de antes e poder saber como voce esta contar coisas da minha vida e simplesmente ter uma amizade leve e verdadeira novamente voce fez parte da minha historia e sempre vai existir um carinho e uma gratidao por tudo que vivemos mas hoje eu fico feliz por poder olhar para frente e aproveitar essa nova fase da nossa amizade espero que a gente consiga manter esse respeito esse carinho e essa leveza e que daqui pra frente possamos criar novas lembrancas sem precisar ficar presos ao que aconteceu no passado obrigado por tudo que voce representou na minha vida e por tudo que de alguma forma me ajudou a crescer fico realmente feliz por ter voce novamente por perto como amiga e espero que nossa amizade daqui pra frente seja cada vez mais tranquila sincera e especial ♡</div>
+ <div class="wave-divider"></div>
+ <div class="closing">que essa nova fase seja leve, sincera e bonita ♡</div>
+</section>
+
+<div class="footer">com carinho ♡</div>
+</main>
+</body>
+</html>
